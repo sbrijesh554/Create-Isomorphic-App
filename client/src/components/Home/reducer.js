@@ -1,6 +1,7 @@
 const initialState = {
     sampledata : [],
-    randomData: null
+    randomData: null,
+    serverResponse: ''
 }
 
 export const reducer = (state = initialState, param) => {
@@ -20,6 +21,11 @@ export const reducer = (state = initialState, param) => {
                ...state,
                sampledata: param.payload
         }
+        case "saveduser":
+            return {
+                ...state,
+                serverResponse: param.payload
+            }
         default : return state;
     }
 }

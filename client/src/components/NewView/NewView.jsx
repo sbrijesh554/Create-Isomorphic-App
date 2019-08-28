@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import styles from './styles.css';
+import styles from '../../styles/css/styles.css';
 import {fetchSampleData} from '../action';
 
 class NewView extends React.Component{

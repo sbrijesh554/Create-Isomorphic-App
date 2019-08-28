@@ -1,7 +1,6 @@
 import React from "react";
-import Home from './components/Home.jsx'
-import NewView from './components/NewView.jsx';
 import { Route } from 'react-router-dom';
+
 export default class App extends React.Component {
 
   constructor(props){
@@ -11,9 +10,14 @@ export default class App extends React.Component {
   render(){
         return (
           <div>
+            {/* <Route exact path='/' component={Test} /> */}
+            {/* <Test></Test> */}
+              {/* <Route path="/hoc" component={sample}/>
               <Route exact path='/' component={Home} />
-              <Route path='/newview' component={NewView} />
+              <Route path='/newview' component={NewView} /> */}
           </div>
       );
   }
 };
+
+

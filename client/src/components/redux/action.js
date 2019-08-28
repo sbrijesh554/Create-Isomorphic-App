@@ -35,3 +35,15 @@ export const fetchSampleData = function () {
     }
 }
 
+export const saveUserDetails = function (data) {
+    return (dispatch) => {
+        axios.post("http://localhost:8081/userdata/savedata", data).then((resp)=>{
+            dispatch({type: 'saveduser', payload: resp.data})
+        }
+
+        ).catch((err) => {
+            dispatch({type: 'saveduser', payload: err.data})
+        })
+    }
+}
+

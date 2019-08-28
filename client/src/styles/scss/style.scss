@@ -1,0 +1,6 @@
+$dangercolor: red;
+
+
+div :nth-child(3n+3){
+    color: $dangercolor
+}
