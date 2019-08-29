@@ -2,7 +2,7 @@ import React from 'react';
 import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux';
 import styles from './styles.css';
-import {getSampleData, saveUserDetails} from '../redux/action';
+import {getSampleData, saveUserDetails} from '../../redux/action';
 import {Link} from 'react-router-dom';
 
 class Home extends React.Component{

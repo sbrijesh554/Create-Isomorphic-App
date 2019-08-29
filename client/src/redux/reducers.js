@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
 
-import {reducer} from '../Home/reducer'
+import {reducer} from '../components/Home/reducer'
 
 export const reducers = combineReducers({
     sampledata: reducer

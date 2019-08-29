@@ -49,8 +49,7 @@ var config = {
              test: [/.css$|.scss$/],
              exclude: /node_modules/,
              use: [
-               MiniCssExtractPlugin.loader,
-                "style-loader",
+               MiniCssExtractPlugin.loader,        
                 "css-loader",
                 "sass-loader"
                ],
